@@ -18,17 +18,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 1. Install pnpm first
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      # 2. Setup Node without the strict npm cache
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
+          node-version: '22'
 
+      # 3. Use pnpm for all commands instead of npm
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Run lint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Run build
-        run: npm run build
+        run: pnpm run build
