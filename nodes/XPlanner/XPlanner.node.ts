@@ -89,7 +89,7 @@ export class XPlanner implements INodeType {
                     accessToken = await XPlanner.getAccessToken(this as any, credentials);
                 }
 
-                const options = {
+                const options: any = {
                     method: 'GET',
                     uri: `${baseUrl}/api/webhooks/events`,
                     json: true,

@@ -15,14 +15,14 @@ import { pliegerOperations, pliegerFields } from './descriptions/Plieger.descrip
 
 export class Plieger implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'Flex Platform',
+        displayName: 'Plieger',
         name: 'plieger',
         icon: { light: 'file:plieger.svg', dark: 'file:plieger.svg' },
         group: ['transform'],
         version: 1,
-        description: 'Interaction with Flex Platform API',
+        description: 'Interaction with Plieger API',
         defaults: {
-            name: 'Flex Platform',
+            name: 'Plieger',
         },
         inputs: [NodeConnectionTypes.Main],
         outputs: [NodeConnectionTypes.Main],
@@ -89,7 +89,7 @@ export class Plieger implements INodeType {
                     accessToken = await Plieger.getAccessToken(this as any, credentials);
                 }
 
-                const options = {
+                const options: any = {
                     method: 'GET',
                     uri: `${baseUrl}/api/webhooks/events`,
                     json: true,
