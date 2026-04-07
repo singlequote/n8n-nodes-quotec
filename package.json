@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-quotec",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Custom n8n nodes for Flex Platform, XPlanner and Plieger",
     "license": "MIT",
     "homepage": "",
