@@ -15,14 +15,14 @@ import { xplannerOperations, xplannerFields } from './descriptions/XPlanner.desc
 
 export class XPlanner implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'Flex Platform',
+        displayName: 'XPlanner',
         name: 'xplanner',
         icon: { light: 'file:xplanner.svg', dark: 'file:xplanner.svg' },
         group: ['transform'],
         version: 1,
-        description: 'Interaction with Flex Platform API',
+        description: 'Interaction with XPlanner API',
         defaults: {
-            name: 'Flex Platform',
+            name: 'XPlanner',
         },
         inputs: [NodeConnectionTypes.Main],
         outputs: [NodeConnectionTypes.Main],

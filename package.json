@@ -1,19 +1,18 @@
 {
     "name": "n8n-nodes-quotec",
     "version": "1.0.9",
-    "description": "",
+    "description": "Custom n8n nodes for Flex Platform, XPlanner and Plieger",
     "license": "MIT",
     "homepage": "",
     "keywords": [
+        "n8n-community-node-package",
         "quotec",
         "flex-platform",
-        "pulse-food",
         "xplanner",
-        "plieger",
-        "n8n-community-node-package"
+        "plieger"
     ],
     "author": {
-        "name": "",
+        "name": "Single Quote",
         "email": ""
     },
     "repository": {
@@ -36,20 +35,22 @@
         "strict": true,
         "credentials": [
             "dist/credentials/FlexPlatformApi.credentials.js",
-            "dist/credentials/XPlannerApi.credentials.js"
+            "dist/credentials/XPlannerApi.credentials.js",
+            "dist/credentials/PliegerApi.credentials.js"
         ],
         "nodes": [
             "dist/nodes/FlexPlatform/FlexPlatform.node.js",
             "dist/nodes/FlexPlatform/FlexPlatformTrigger.node.js",
             "dist/nodes/XPlanner/XPlanner.node.js",
-            "dist/nodes/XPlanner/XPlannerTrigger.node.js"
+            "dist/nodes/XPlanner/XPlannerTrigger.node.js",
+            "dist/nodes/Plieger/Plieger.node.js",
+            "dist/nodes/Plieger/PliegerTrigger.node.js"
         ]
     },
     "devDependencies": {
         "@n8n/node-cli": "*",
         "eslint": "9.39.4",
         "prettier": "3.8.1",
-        "release-it": "19.2.4",
         "typescript": "5.9.3"
     },
     "peerDependencies": {
