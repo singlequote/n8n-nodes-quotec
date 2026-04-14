@@ -36,7 +36,8 @@
         "credentials": [
             "dist/credentials/FlexPlatformApi.credentials.js",
             "dist/credentials/XPlannerApi.credentials.js",
-            "dist/credentials/PliegerApi.credentials.js"
+            "dist/credentials/PliegerApi.credentials.js",
+            "dist/credentials/SubsidieApi.credentials.js"
         ],
         "nodes": [
             "dist/nodes/FlexPlatform/FlexPlatform.node.js",
@@ -44,7 +45,9 @@
             "dist/nodes/XPlanner/XPlanner.node.js",
             "dist/nodes/XPlanner/XPlannerTrigger.node.js",
             "dist/nodes/Plieger/Plieger.node.js",
-            "dist/nodes/Plieger/PliegerTrigger.node.js"
+            "dist/nodes/Plieger/PliegerTrigger.node.js",
+            "dist/nodes/Subsidie/Subsidie.node.js",
+            "dist/nodes/Subsidie/SubsidieTrigger.node.js"
         ]
     },
     "devDependencies": {

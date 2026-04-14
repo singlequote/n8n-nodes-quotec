@@ -14,7 +14,7 @@ export class PliegerApi implements ICredentialType {
             name: 'baseUrl',
             type: 'string',
             default: 'http://plieger-sanitairkiezer.test',
-            description: 'De basis URL van je Flex Platform instantie',
+            description: 'De basis URL van je Plieger instantie',
             required: true,
         },
         // 1. De Keuzeschakelaar

@@ -3,9 +3,9 @@ import {
     INodeProperties,
 } from 'n8n-workflow';
 
-export class XPlannerApi implements ICredentialType {
-    name = 'xplannerApi';
-    displayName = 'XPlanner API';
+export class SubsidieApi implements ICredentialType {
+    name = 'subsidieApi';
+    displayName = 'Subsidiemanager API';
     documentationUrl = 'https://jouw-docs-url.com';
 
     properties: INodeProperties[] = [
@@ -13,8 +13,8 @@ export class XPlannerApi implements ICredentialType {
             displayName: 'API Base URL',
             name: 'baseUrl',
             type: 'string',
-            default: 'http://xplanner.test',
-            description: 'De basis URL van je XPlanner instantie',
+            default: 'http://subsidie-manager.test',
+            description: 'De basis URL van je subsidiemanager instantie',
             required: true,
         },
         // 1. De Keuzeschakelaar
